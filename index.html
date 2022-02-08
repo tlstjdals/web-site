@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e4ef9c81b.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href=""><i class="fas fa-fax"></i> 네이게이션바</a>
+        </div>
+        <ul class="navbar_menu">
+            <li><a href="">홈</a></li>
+            <li><a href="">사진</a></li>
+            <li><a href="">동영상</a></li>
+            <li><a href="">설명</a></li>
+            <li><a href="">기타</a></li>
+        </ul>
+        <ul class="navbar_icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+        </ul>
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <header>
+        <h1>네비게이션바 와<br />스크롤 애니메이션 효과</h1>
+    </header>
+    <main>
+        <section>
+            <div class="sa sa-up"><i class="fas fa-angry"></i></div>
+            <div class="sa sa-up" data-sa-delay="200"><i class="far fa-angry"></i></div>
+            <div class="sa sa-up" data-sa-delay="400"><i class="fas fa-balance-scale"></i></div>
+            <div class="sa sa-up" data-sa-delay="600"><i class="fas fa-blind"></i></div>
+        </section>
+        <section>
+            <div class="sa sa-up" id="saDiv5"><i class="fas fa-cat"></i></div>
+            <div class="sa sa-down" data-sa-trigger="#saDiv5"><i class="fab fa-cc-visa"></i></div>
+            <div class="sa sa-right" data-sa-trigger="#saDiv5"><i class="fab fa-cc-apple-pay"></i></div>
+            <div class="sa sa-left" data-sa-trigger="#saDiv5"><i class="fas fa-book-reader"></i></div>
+        </section>
+        <section>
+            <div class="sa sa-rotateL" id="saDiv9"><i class="fas fa-church"></i></div>
+            <div class="sa sa-rotateR"><i class="fas fa-concierge-bell"></i></div>
+            <div class="sa sa-scaleUp" data-sa-trigger="#saDiv9"><i class="fab fa-contao"></i></div>
+            <div class="sa sa-scaleDown" data-sa-trigger="#saDiv9"><i class="fas fa-code-branch"></i></div>
+        </section>
+    </main>
+    <script src="scroll.js"></script>
+</body>
+
+</html>
